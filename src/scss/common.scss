@@ -1,0 +1,39 @@
+// Заголовки, загальні БЕМ блоки та інше...
+// Title
+.title {
+	font-family: "Josefin Sans";
+	font-weight: 600;
+	font-size: rem(88);
+	@include adaptiveValue("font-size", 88, 30);
+	line-height: math.div(100, 88);
+	text-transform: capitalize;
+	color: #020953;
+}
+// Subtitle
+.subtitle {
+	font-size: rem(32);
+	@include adaptiveValue("font-size", 32, 18);
+	line-height: math.div(100, 32);
+	color: #060a3f;
+	text-transform: capitalize;
+}
+// Footer-title
+.footer-title {
+	font-family: "Josefin Sans";
+	font-weight: 400;
+	@include adaptiveValue("font-size", 25, 20);
+	line-height: math.div(100, 25);
+	text-transform: capitalize;
+	color: #fff;
+	&:not(:last-child) {
+		margin-bottom: rem(5);
+	}
+}
+// Footer-text
+.footer-text {
+	font-weight: 300;
+	font-size: rem(16);
+	line-height: math.div(26, 16);
+	text-transform: capitalize;
+	color: #fff;
+}
